@@ -20,10 +20,10 @@ public class ProjectFullstackApplication implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
 
-        this.userRepository.save(new User(null, "Bob", "Brown", "bob@gmail.com"));
-        this.userRepository.save(new User(null, "Ana", "Blue", "ana@gmail.com"));
-        this.userRepository.save(new User(null, "Alex", "Green", "alex@gmail.com"));
-        this.userRepository.save(new User(null, "Chris", "red", "chris@gmail.com"));   
+        this.userRepository.save(new User("Bob", "Brown", "bob@gmail.com"));
+        this.userRepository.save(new User("Ana", "Blue", "ana@gmail.com"));
+        this.userRepository.save(new User("Alex", "Green", "alex@gmail.com"));
+        this.userRepository.save(new User("Chris", "red", "chris@gmail.com"));   
 
     }
 
